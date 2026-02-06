@@ -1,11 +1,13 @@
-# 🪪 User Profile Card Generator
+# User Profile Card Generator
 
 A dynamic web application that allows users to create, preview, and download a customized personal profile card. This project demonstrates real-time DOM manipulation and client-side image generation.
+
+Deployed on : [user-profile-card-generator](user-profile-card-generator-sharan.vercel.app)
 
 <img width="1908" height="917" alt="image" src="https://github.com/user-attachments/assets/9bfe814a-a579-47c8-b86d-e89fa365ae97" />
 
 
-## ✨ Features
+## Features
 
 * **Real-time Preview:** The profile card updates instantly as you type.
 * **Image Upload:** Users can upload a profile picture from their local device (using the FileReader API).
@@ -13,7 +15,7 @@ A dynamic web application that allows users to create, preview, and download a c
 * **Google Drive Link Support:** Automatically converts standard Google Drive file links into direct image URLs.
 * **Responsive Design:** Uses CSS Flexbox to ensure the layout works on different screen sizes.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5:** Semantic structure.
 * **CSS3:** Flexbox layout, custom styling, and Google Fonts integration (*Bungee, Pacifico, Dancing Script*).
@@ -22,7 +24,7 @@ A dynamic web application that allows users to create, preview, and download a c
     * `FileReader` API for handling image uploads.
 * **Library:** [html2canvas](https://html2canvas.hertzen.com/) (v1.4.1) for rendering the DOM element to an image.
 
-## 🚀 How to Run
+## How to Run
 
 Since this is a static web project, you do not need to install any dependencies or run a backend server.
 
@@ -30,7 +32,7 @@ Since this is a static web project, you do not need to install any dependencies 
 2.  Navigate to the project folder.
 3.  Open `index.html` in any modern web browser (Chrome, Firefox, Edge).
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── index.html    # Main structure and layout
