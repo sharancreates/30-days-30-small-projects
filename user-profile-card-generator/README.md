@@ -2,7 +2,7 @@
 
 A dynamic web application that allows users to create, preview, and download a customized personal profile card. This project demonstrates real-time DOM manipulation and client-side image generation.
 
-Deployed on : (user-profile-card-generator-sharan.vercel.app)
+Deployed on : [user-profile-card-generator](https://user-profile-card-generator-sharan.vercel.app)
 
 <img width="1908" height="917" alt="image" src="https://github.com/user-attachments/assets/9bfe814a-a579-47c8-b86d-e89fa365ae97" />
 
