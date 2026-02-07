@@ -1,7 +1,7 @@
 # Loan EMI Calculator
 
 A lightweight, web-based Loan EMI (Equated Monthly Installment) calculator featuring a detailed amortization schedule and a distinct "Vintage Paper" aesthetic.
-Deployed  link : [](loan-emi-cal-sharan.vercel.app)
+Deployed  link : [LINK](loan-emi-cal-sharan.vercel.app)
 
 <img width="1915" height="908" alt="image" src="https://github.com/user-attachments/assets/0ad48bd3-78ba-4bf1-bb31-8fcb8f80315d" />
 <img width="1899" height="968" alt="image" src="https://github.com/user-attachments/assets/d135c636-2168-42b7-975f-ed697f1b6c72" />
