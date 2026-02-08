@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="receipt-container">
+    <h2 class="store-title">THE GENERAL STORE</h2>
+    <p class="date-line">EST. 1924</p>
+    
+    <div class="divider">================================</div>
+
+    <h3>Catalog</h3>
+    <div id="product-list"></div>
+
+    <div class="divider">--------------------------------</div>
+
+    <h3>Your Receipt</h3>
+    <ul id="cart-list" class="cart-list"></ul>
+
+    <div class="divider">================================</div>
+
+    <div class="totals">
+        <div class="row">
+            <span>SUBTOTAL:</span>
+            <span id="subtotal">₹0.00</span>
+        </div>
+        <div class="row">
+            <span>TAX (18%):</span>
+            <span id="tax">₹0.00</span>
+        </div>
+        <div class="row total">
+            <span>GRAND TOTAL:</span>
+            <span id="total">₹0.00</span>
+        </div>
+    </div>
+    
+    <div class="footer-msg">THANK YOU FOR YOUR PATRONAGE</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
