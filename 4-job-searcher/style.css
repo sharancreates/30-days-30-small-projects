@@ -1,0 +1,257 @@
+:root {
+    --blueprint-bg: #1B3B6F;
+    --blueprint-line: #9EB3D7;
+    --ink-white: #FFFFFF;
+    --grid-color: rgba(255, 255, 255, 0.1);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --accent: #FFD700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--blueprint-bg);
+    color: var(--ink-white);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.container {
+    width: 96%;
+    max-width: 1600px;
+    margin: 0 auto;
+    border: 3px solid var(--ink-white);
+    padding: 2rem;
+    position: relative;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.3);
+    background-color: var(--blueprint-bg);
+}
+
+.container::before, .container::after {
+    content: '+';
+    position: absolute;
+    font-size: 2rem;
+    color: var(--blueprint-line);
+}
+.container::before { top: 5px; left: 10px; }
+.container::after { bottom: 5px; right: 10px; }
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px dashed var(--blueprint-line);
+    padding-bottom: 1.5rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0px #000;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--blueprint-line);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--ink-white);
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--ink-white);
+    font-family: inherit;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 8px;
+}
+
+input::placeholder {
+    color: var(--blueprint-line);
+    opacity: 0.7;
+}
+
+button#searchBtn {
+    background-color: var(--ink-white);
+    color: var(--blueprint-bg);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 30px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: transform 0.1s;
+}
+
+button#searchBtn:hover {
+    background-color: var(--accent);
+    color: #000;
+}
+
+button#searchBtn:active {
+    transform: scale(0.95);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    background: none;
+    border: 1px solid var(--blueprint-line);
+    color: var(--blueprint-line);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    border-color: var(--ink-white);
+    color: var(--ink-white);
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 1.5rem;
+}
+
+.job-card {
+    border: 2px solid var(--blueprint-line);
+    padding: 1.5rem;
+    background: var(--card-bg);
+    position: relative;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.job-card:hover {
+    border-color: var(--ink-white);
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.job-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+    line-height: 1.4;
+}
+
+.job-company {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.job-location {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--blueprint-line);
+    margin-bottom: 1rem;
+}
+
+.job-link {
+    display: inline-block;
+    color: var(--ink-white);
+    text-decoration: none;
+    border: 1px solid var(--ink-white);
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: auto;
+    transition: background 0.2s;
+}
+
+.job-link:hover {
+    background-color: var(--ink-white);
+    color: var(--blueprint-bg);
+    font-weight: bold;
+}
+
+.save-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.save-btn:hover {
+    transform: scale(1.2);
+}
+
+.save-btn.saved {
+    filter: drop-shadow(0 0 5px var(--accent));
+}
+
+.placeholder-text {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .search-box {
+        flex-direction: column;
+    }
+    button#searchBtn {
+        width: 100%;
+        padding: 10px;
+    }
+}

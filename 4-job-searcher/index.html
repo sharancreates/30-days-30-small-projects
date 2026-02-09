@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Job Search</h1>
+            <p>Find your next role in tech.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="e.g. React, Python, Designer...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('results')">Search Results</button>
+            <button class="tab-btn" onclick="switchTab('favorites')">Favorites (<span id="favCount">0</span>)</button>
+        </div>
+
+        <div id="jobContainer" class="job-list">
+            <p class="placeholder-text">Enter a keyword above to start searching.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
